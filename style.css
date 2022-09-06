@@ -145,10 +145,35 @@ header {
 .responsividade{
     display: none;
 }
+.responsividade992{
+    display: none;
+
+    
+}
 
 @media(min-width: 570px){
     .responsividade{
         display: table-cell;
     }
+    .bkmeta-card{
+        padding: 35px;
+    }
+    .bkmeta-vendas-table tbody tr {
+        height: 55px ;
+    }
+    .bkmeta-vendas-table tbody {
+        font-size: 18px;
+
+
+    }
+
 }
+
+
+@media(min-width: 992px){
+    .responsividade992{
+        display: table-cell;
+    }
+}
+
 
