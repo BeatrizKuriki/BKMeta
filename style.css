@@ -1,75 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-*{
+
+* {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body, html{
+body,
+html {
     background-color: #000;
     color: #ffffff;
 
 }
 
-header{
+header {
     background: linear-gradient(180deg, #102347 0%, #181818 100%);
     height: 220px;
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
 
 }
 
-.logo-container{
+.logo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
-.logo-container img{
+
+.logo-container img {
     width: 235px;
 
 }
-.logo-container h1{
+
+.logo-container h1 {
     margin-top: 15px;
-    font-size:24px;
+    font-size: 24px;
 
 }
 
-.logo-container p{
+.logo-container p {
     font-size: 14px;
     font-weight: 300;
 }
 
-.bkmeta-card{
-    background-color: #283142 ;
+.bkmeta-card {
+    background-color: #283142;
     border-radius: 10px;
     padding: 30px 10px;
 }
-.bkmeta-container{
+
+.bkmeta-container {
     width: 100%;
     max-width: 900px;
     margin: 0 auto
-
 }
 
-#vendas{
+#vendas {
     padding: 40px 10px;
 }
-.bkmeta-vendas-titulo{
+
+.bkmeta-vendas-titulo {
     color: #676FFF;
     font-size: 24px;
     margin-bottom: 20px;
 
 }
 
-.bkmeta-form-controle-container{
+.bkmeta-form-controle-container {
     margin-bottom: 16px;
-    max-width: 300px;  
+    max-width: 300px;
 }
 
-.bkmeta-form-controle{
+.bkmeta-form-controle {
     width: 100%;
     height: 46px;
     background-color: #1B2531;
@@ -80,12 +85,13 @@ header{
     font-size: 18px;
 }
 
-.bkmeta-vendas-table{
+.bkmeta-vendas-table {
     width: 100%;
     border-spacing: 0;
-    border-collapse: collapse ;
+    border-collapse: collapse;
 }
-.bkmeta-vendas-table thead{
+
+.bkmeta-vendas-table thead {
     height: 55px;
     font-size: 16px;
     color: #E9E9E9;
@@ -93,7 +99,7 @@ header{
 
 }
 
-.bkmeta-vendas-table tbody{
+.bkmeta-vendas-table tbody {
     font-size: 14px;
     font-weight: 400;
     color: #CFCFCF;
@@ -107,12 +113,32 @@ header{
     border-top: 1px solid #5F6E82;
 }
 
-.bkmeta-vendas-table tbody tr:hover > td{
+.bkmeta-vendas-table tbody tr:hover>td {
     background-color: #384459;
 }
 
-.bkmeta-vendas-table tbody tr:nth-child(odd){
+.bkmeta-vendas-table tbody tr:nth-child(odd) {
     background-color: #242C3B;
+}
 
+.bkmeta-red-btn-container{
+    display: flex;
+    justify-content: center ;
+    
+}
+
+.bkmeta-red-btn {
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 107, 114, 0.1);
+    border: 1px solid #FF6B72;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.bkmeta-red-btn img {
+    width: 19px;
 }
 
