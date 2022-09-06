@@ -142,3 +142,13 @@ header {
     width: 19px;
 }
 
+.responsividade{
+    display: none;
+}
+
+@media(min-width: 570px){
+    .responsividade{
+        display: table-cell;
+    }
+}
+
