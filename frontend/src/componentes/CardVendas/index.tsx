@@ -1,25 +1,33 @@
+import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import BotaoNotificacao from '../BotaoNotificacao'
 import './style.css'
 
 function CardVendas() {
+    const min = new Date(new Date().setDate(new Date().getDate() - 365));
+    const max = new Date();    
+
+    const [minDate, setMinDate] = useState(min);
+    const [maxDate, setMaxDate] = useState(max);
+
+
     return (
         <div className="bkmeta-card">
             <h2 className="bkmeta-vendas-titulo">Vendas</h2>
             <div>
                 <div className="bkmeta-form-controle-container">
                     <DatePicker
-                        selected={new Date()}
-                        onChange={(date: Date) => { }}
+                        selected={minDate}
+                        onChange={(date: Date) => setMinDate(date)}
                         className="bkmeta-form-controle"
                         dateFormat="dd/MM/yyyy"
                     />
                 </div>
                 <div className="bkmeta-form-controle-container">
                     <DatePicker
-                        selected={new Date()}
-                        onChange={(date: Date) => { }}
+                        selected={maxDate}
+                        onChange={(date: Date) => setMaxDate(date)}
                         className="bkmeta-form-controle"
                         dateFormat="dd/MM/yyyy"
                     />
