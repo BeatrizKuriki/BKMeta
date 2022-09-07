@@ -1,14 +1,19 @@
-import BotaoNotificacao from "./componentes/BotaoNotificacao"
+import Header from "./componentes/Header"
+import CardVendas  from "./componentes/CardVendas"
 
 
 function App() {
   return (
     <>
-      <h1>Olá Mundo!</h1>
-      <BotaoNotificacao />
-      <BotaoNotificacao />
-      <BotaoNotificacao />
-      
+      <Header />
+      <main>
+        <section id="vendas">
+          <div className="bkmeta-container">
+          <CardVendas/>  
+          </div>
+        </section>
+      </main>
+
 
     </>
   )
