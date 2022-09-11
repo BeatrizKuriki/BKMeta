@@ -1,5 +1,5 @@
 import Header from "./componentes/Header"
-import CardVendas  from "./componentes/CardVendas"
+import CardVendas  from "./componentes/SalesCard"
 
 
 function App() {
